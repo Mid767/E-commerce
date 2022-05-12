@@ -1,0 +1,320 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* nav */
+nav {
+    border-bottom: yellow 5px solid;
+    transition: 0.6s;
+    position: relative;
+}
+.brand {
+    font-size: 30px;
+}
+.item {
+    font-size: 20px;
+}
+input {
+    border-bottom-color: rgb(255, 255, 255);
+    border-right: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    margin-right: -40px;
+    width: 170px;
+}
+@media(min-width: 1000px) {
+    input {
+        width: 250px;
+    }
+}
+input:focus {
+    outline: none;
+}
+.bi-person, .bi-cart3 {
+    color: rgb(173, 173, 173);
+    font-size: 25px;
+    cursor: pointer;
+}
+@media(min-width: 530px) {
+    .bi-person, .bi-cart3 {
+        margin: 10px;
+    }
+}
+@media(max-width: 440px) {
+    .bi-person, .bi-cart3 {
+        opacity: 0;
+        position: absolute;
+    }
+}
+.bi-person:hover, .bi-cart3:hover{
+    color: white;
+}
+.bi-search {
+    font-size: 18px;
+    margin-top: 15px;
+    color: rgb(173,173,173);
+    margin-left: -40px;
+}
+
+@media(max-width: 950px) {
+    .search{
+        width: 120px;
+    }
+}
+.search, .bi-bi-search {
+    display: inline-block;
+}
+.search, .bi-search {
+    opacity: 0;
+}
+@media (min-width: 768px) {
+    .search, .bi-search {
+        opacity: 1;
+    }
+}
+.searchToggle{
+    opacity: 1;
+}
+
+/* section 1 , section 4, section 6, section 8*/
+.sectionOne {
+    background:url(./images/section1.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:1000px;
+    position: relative;
+}
+@media(max-width: 770px) {
+    .sectionOne {
+        height: 580px;
+    }
+    .sectionOne button, .sectionFour button, .sectionEight button, .text{
+        display: none;
+    }
+}
+.text {
+    position: relative;
+    top: 700px;
+}
+.sectionOne h1, .sectionFour h1, .sectionSix h1, .sectionEight h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+.sectionOne p, .sectionFour p, .sectionSix p, .sectionEight p {
+    font-size: 25px;
+    max-width: 1000px;
+}
+.sectionOne button, .sectionFour button, .sectionSix button, .sectionEight button {
+    width: 170px;
+    height: 65px;
+    font-size: 17px;
+}
+/* section 2 */
+.card {
+    width: 400px;
+    margin: auto;
+}
+/* section 3 */
+.scroll {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 500px;
+    gap: 20px;
+    overflow-x: scroll;
+}
+.scroll::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background-color: #F5F5F5;
+  }
+  
+  .scroll::-webkit-scrollbar {
+    background-color: #F5F5F5;
+  }
+  
+  .scroll::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgb(32, 32, 32);
+    width: 25px;
+  }
+  
+@media(max-width: 800px) {
+    .scroll {
+        grid-auto-columns: 300px;
+    }
+    .shop h4 {
+        font-size: 17px;
+    }
+    .shop span {
+        font-size: 15px;
+    }
+}
+@media(max-width: 390px) {
+    .scroll {
+        grid-auto-columns: 220px;
+    }
+}
+.description {
+    display: flex;
+    justify-content: space-between;
+}
+.shop>span {
+    font-weight: bold;
+    font-size: 15px;
+}
+.shop {
+    margin-bottom: 20px;
+}
+.shop img, .shop h4 {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.shopHeading {
+    font-size: 30px;
+}
+.shopHeading--span {
+    font-size: 17px;
+}
+@media(max-width: 780px) {
+    .shopHeading {
+        font-size: 17px;
+        
+    }
+    .shopHeading--span {
+       font-size: 11px;
+       
+   }
+}
+/* section 4 */
+.sectionFour {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ), url(./images/section4.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:1000px;
+    position: relative;
+}
+@media(max-width: 770px) {
+    .sectionFour {
+      height: 580px;
+    }
+}
+/* section 6 */
+.sectionSix{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ), url(./images/section\ 6.webp);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:1000px;
+    position: relative;
+}
+@media(max-width: 770px) {
+    .sectionSix {
+      height: 580px;
+    }
+}
+.sectionSix .text {
+    top: 350px;
+}
+.sectionSix .text p{
+    max-width: 800px;
+}
+/* section 8 */
+.sectionEight {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3) ), url(./images/section8.webp);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:1000px;
+    position: relative;
+}
+@media(max-width: 770px) {
+    .sectionEight {
+      height: 580px;
+    }
+}
+.sectionEight .text{
+    top: 150px;
+}
+/* section 9 */
+
+.sectionNine__photos {
+     margin: 10px;
+ }
+ .sectionNine img, .sectionNine h5, .sectionNine p{
+     cursor: pointer;
+ }
+
+@media(max-width:1200px) {
+    .sectionNine h5 {
+        font-size: 17px;
+    }
+    .sectionNine p {
+        font-size: 15px;
+    }
+}
+/* footer */
+footer {
+    border-top: 5px solid yellow;
+    position: relative;
+    background: black;
+}
+footer ul {
+   list-style: none;
+   position: relative;
+   right: 30px;
+}
+footer ul li {
+    margin-bottom: 10px;
+    max-width: 200px;
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer a:hover {
+    color: yellow;
+}
+
+footer form {
+    max-width: 300px;
+    min-width: 180px;
+}
+
+@media(max-width: 992px) {
+    form a {
+        font-size: 10px;
+    }
+}
+/* footer for smaller screens */
+.dropDown {
+    border-bottom: solid 2px yellow;
+    padding-bottom: 10px;
+}
+.bi {
+    cursor: pointer;
+    font-size: 22px;
+    transition: 0.2s;
+}
+.bi:hover {
+    color: yellow;
+}
+.show-dropDown {
+    display: block;
+}
+.dropDown ul {
+    display: none;
+}
+.bi-arrow-up {
+    display: none;
+}
+.arrow-rotate {
+    transform: rotate(180deg);
+    color: yellow;
+}
+
+ 
